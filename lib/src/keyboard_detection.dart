@@ -115,7 +115,7 @@ class _KeyboardDetectionState extends State<KeyboardDetection>
       return;
     }
 
-    final bottomInset = view.viewInsets.bottom / view.devicePixelRatio;
+    final bottomInset = MediaQuery.of(context).viewInsets.bottom; //view.viewInsets.bottom / view.devicePixelRatio;
     final controller = widget.controller;
 
     if (controller.state == KeyboardState.visible &&
